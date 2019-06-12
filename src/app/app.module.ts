@@ -6,6 +6,12 @@ import { MonPremierComponent } from './mon-premier/mon-premier.component';
 import { AppareilComponent } from './appareil/appareil.component';
 import { FormsModule } from '@angular/forms';
 
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+
+// the second parameter 'fr' is optional
+registerLocaleData(localeFr, 'fr');
+
 @NgModule({
   declarations: [
     AppComponent,
