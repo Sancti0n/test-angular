@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+import { AppareilService } from './services/appareil.service';
 
 // the second parameter 'fr' is optional
 registerLocaleData(localeFr, 'fr');
@@ -22,7 +23,9 @@ registerLocaleData(localeFr, 'fr');
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    AppareilService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
