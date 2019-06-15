@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { interval } from 'rxjs';
 import { Subscription } from 'rxjs';
 
