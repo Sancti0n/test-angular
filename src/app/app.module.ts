@@ -21,6 +21,7 @@ import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserService } from './services/user.service';
 import { NewUserComponent } from './new-user/new-user.component' ;
+import { HttpClientModule } from '@angular/common/http';
 
 // the second parameter 'fr' is optional
 registerLocaleData(localeFr, 'fr');
@@ -54,6 +55,7 @@ const appRoutes: Routes = [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
